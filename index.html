@@ -3,51 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WolfNetwork — Iceboat Racing | O maior servidor de Iceboat do Brasil</title>
-  <meta name="description" content="WolfNetwork é o maior servidor brasileiro de Iceboat Racing no Minecraft. Corridas competitivas com elo, ranking global, torneios semanais e comunidade ativa. IP: wolfnetwork.com.br — Java 1.16 a 1.21+ e Bedrock." />
-  <meta name="keywords" content="minecraft, iceboat, iceboat racing, servidor minecraft brasil, wolfnetwork, minigames" />
-  <meta name="theme-color" content="#060b16" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
+  <title>WolfNetwork — Iceboat Racing | Servidor de Minecraft</title>
+  <meta name="description" content="WolfNetwork é o maior servidor brasileiro de Iceboat Racing no Minecraft. Corridas ranqueadas, ranking global, torneios mensais e física autêntica. Java 1.16–1.21+ e Bedrock. IP: wolfnetwork.com.br" />
+  <meta name="theme-color" content="#0b0f1a" />
   <meta property="og:title" content="WolfNetwork — Iceboat Racing" />
-  <meta property="og:description" content="Domine o gelo. Vença a corrida. O maior servidor de Iceboat Racing do Brasil. IP: wolfnetwork.com.br" />
-  <meta property="og:url" content="https://efragamer300.github.io/My-project/" />
+  <meta property="og:description" content="O maior servidor brasileiro de Iceboat Racing. IP: wolfnetwork.com.br" />
+  <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="WolfNetwork — Iceboat Racing" />
-  <meta name="twitter:description" content="Domine o gelo. Vença a corrida. IP: wolfnetwork.com.br" />
-
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐺</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- ===== PRELOADER ===== -->
-  <div class="preloader" id="preloader">
-    <div class="preloader-inner">
-      <div class="preloader-wolf">🐺</div>
-      <div class="preloader-logo">WOLF<span>NETWORK</span></div>
-      <div class="preloader-bar"><span></span></div>
-    </div>
-  </div>
-
-  <!-- ===== BARRA DE PROGRESSO ===== -->
-  <div class="scroll-progress" id="scrollProgress"></div>
 
   <!-- ===== NAVBAR ===== -->
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
       <a href="#home" class="logo">
-        <span class="logo-icon">🐺</span>
-        <span class="logo-text">WOLF<span>NETWORK</span></span>
+        <svg class="logo-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 5l3 3h4l2-3 2 3h4l-2 4 2 4h-4l-2 3-2-3H7l-3-3 2-4z"/>
+        </svg>
+        <span class="logo-text">Wolf<b>Network</b></span>
       </a>
 
       <nav class="nav-links" id="navLinks">
-        <a href="#home">Início</a>
         <a href="#modos">Modos</a>
         <a href="#pistas">Pistas</a>
         <a href="#ranking">Ranking</a>
@@ -57,627 +38,427 @@
       </nav>
 
       <div class="nav-actions">
-        <button class="btn btn-outline copy-ip" data-ip="wolfnetwork.com.br">
+        <button class="btn btn-ghost copy-ip" data-ip="wolfnetwork.com.br">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
           <span class="ip-label">wolfnetwork.com.br</span>
-          <span class="copy-feedback">Copiado!</span>
+          <span class="copy-feedback">IP copiado</span>
         </button>
-        <a href="#" class="btn btn-primary btn-discord">Discord</a>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <a href="#" class="btn btn-primary btn-discord">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.9 3l-.2.4c1.5.4 2.9 1 4.2 1.9a16.2 16.2 0 0 0-13.8 0c1.3-.9 2.7-1.5 4.2-1.9L10.1 3a19.8 19.8 0 0 0-4.4 1.4C2.9 8.6 2.1 12.7 2.5 16.7a19.9 19.9 0 0 0 6 3l1.5-2.4c-.8-.3-1.6-.7-2.3-1.2l.6-.4a14.2 14.2 0 0 0 12.4 0l.6.4c-.7.5-1.5.9-2.3 1.2l1.5 2.4a19.9 19.9 0 0 0 6-3c.5-4.6-.7-8.7-3.2-12.3ZM9.7 14.2c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm6.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg>
+          Discord
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
+  <main>
   <!-- ===== HERO ===== -->
   <section class="hero" id="home">
-    <canvas class="snow-canvas" id="snowCanvas"></canvas>
-
-    <div class="aurora" aria-hidden="true">
-      <span></span><span></span><span></span>
-    </div>
-
-    <div class="hero-mountains" aria-hidden="true">
-      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-        <path fill="#0b1730" d="M0,224L60,208C120,192,240,160,360,170.7C480,181,600,235,720,234.7C840,235,960,181,1080,165.3C1200,149,1320,171,1380,181.3L1440,192L1440,320L0,320Z"/>
-        <path fill="#081226" d="M0,288L80,272C160,256,320,224,480,224C640,224,800,256,960,266.7C1120,277,1280,267,1360,261.3L1440,256L1440,320L0,320Z"/>
-      </svg>
-    </div>
-
-    <div class="hero-glow" aria-hidden="true"></div>
-
-    <div class="container hero-content">
-      <div class="hero-status reveal-hero" style="--d:0s">
-        <span class="status-dot" id="statusDot"></span>
-        <span id="statusText">Conectando ao servidor…</span>
-      </div>
-
-      <div class="hero-badge reveal-hero" style="--d:.05s">❄️ Temporada 4 — Gelo Eterno já no ar!</div>
-
-      <h1 class="hero-title reveal-hero" style="--d:.1s">
-        DOMINE O <span class="ice-text glitch" data-text="GELO">GELO</span>.<br />
-        VENÇA A CORRIDA.
-      </h1>
-
-      <p class="hero-subtitle reveal-hero" style="--d:.15s">
-        O maior servidor brasileiro de <strong>Iceboat Racing</strong>.
-        Pistas técnicas, física autêntica do blue ice, ranking global
-        e torneios com premiação. Java <strong>1.16 → 1.21+</strong> e Bedrock.
-      </p>
-
-      <div class="hero-actions reveal-hero" style="--d:.2s">
-        <button class="btn btn-primary btn-lg copy-ip" data-ip="wolfnetwork.com.br">
-          📋 Copiar IP: wolfnetwork.com.br
-          <span class="copy-feedback">Copiado!</span>
-        </button>
-        <a href="#modos" class="btn btn-ghost btn-lg">▶ Ver modos de jogo</a>
-      </div>
-
-      <div class="hero-stats reveal-hero" style="--d:.25s">
-        <div class="stat tilt">
-          <span class="stat-value"><span data-count="347" data-live="players">0</span></span>
-          <span class="stat-label">Jogadores online</span>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-status" id="heroStatus">
+          <span class="status-dot" id="statusDot"></span>
+          <span id="statusText">Verificando status do servidor…</span>
         </div>
-        <div class="stat tilt">
-          <span class="stat-value"><span data-count="128">0</span>k+</span>
-          <span class="stat-label">Corridas disputadas</span>
-        </div>
-        <div class="stat tilt">
-          <span class="stat-value"><span data-count="42">0</span></span>
-          <span class="stat-label">Pistas oficiais</span>
-        </div>
-        <div class="stat tilt">
-          <span class="stat-value">99.9%</span>
-          <span class="stat-label">Uptime</span>
-        </div>
-      </div>
-    </div>
 
-    <div class="hero-scroll" aria-hidden="true">▼</div>
-  </section>
+        <h1>Iceboat Racing<br /><span class="accent">competitivo de verdade.</span></h1>
 
-  <!-- ===== MARQUEE ===== -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>🏁 ICEBOAT SPRINT</span><i>❄</i>
-      <span>⏱️ TIME TRIAL</span><i>❄</i>
-      <span>⚔️ ICEBOAT WARS</span><i>❄</i>
-      <span>🏆 GRAND PRIX</span><i>❄</i>
-      <span>🧗 FROZEN PARKOUR</span><i>❄</i>
-      <span>🐺 WOLFPACK RACING</span><i>❄</i>
-      <span>🏁 ICEBOAT SPRINT</span><i>❄</i>
-      <span>⏱️ TIME TRIAL</span><i>❄</i>
-      <span>⚔️ ICEBOAT WARS</span><i>❄</i>
-      <span>🏆 GRAND PRIX</span><i>❄</i>
-      <span>🧗 FROZEN PARKOUR</span><i>❄</i>
-      <span>🐺 WOLFPACK RACING</span><i>❄</i>
-    </div>
-  </div>
+        <p class="hero-sub">
+          A WolfNetwork é o servidor brasileiro dedicado ao Iceboat Racing.
+          Física original do Minecraft, matchmaking por elo, ranking global
+          e torneios mensais. Sem pay-to-win.
+        </p>
 
-  <!-- ===== COMO JOGAR ===== -->
-  <section class="section how-to" id="como-jogar">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="section-tag">Comece agora</span>
-        <h2>Jogue em <span class="ice-text">3 passos</span></h2>
-        <p>Em menos de um minuto você está na linha de largada.</p>
-      </div>
-
-      <div class="steps-grid">
-        <div class="step-card tilt reveal">
-          <div class="step-num">01</div>
-          <div class="step-icon">🎮</div>
-          <h3>Abra o Minecraft</h3>
-          <p>Java Edition, da <strong>1.16 até a 1.21+</strong>. Sem mods obrigatórios — entre vanilla ou com o cliente que preferir.</p>
-        </div>
-        <div class="step-card tilt reveal" style="--delay:.12s">
-          <div class="step-num">02</div>
-          <div class="step-icon">🌐</div>
-          <h3>Adicione o servidor</h3>
-          <p>Multijogador → Adicionar servidor e cole o IP abaixo. Bedrock? Use a porta <code>19132</code>.</p>
-          <button class="btn btn-outline copy-ip" data-ip="wolfnetwork.com.br">
-            wolfnetwork.com.br
-            <span class="copy-feedback">Copiado!</span>
+        <div class="hero-ip">
+          <div class="ip-box">
+            <span class="ip-label-sm">Java &amp; Bedrock</span>
+            <code id="ipCode">wolfnetwork.com.br</code>
+          </div>
+          <button class="btn btn-primary copy-ip" data-ip="wolfnetwork.com.br">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+            Copiar IP
+            <span class="copy-feedback">Copiado</span>
           </button>
         </div>
-        <div class="step-card tilt reveal" style="--delay:.24s">
-          <div class="step-num">03</div>
-          <div class="step-icon">🛶</div>
-          <h3>Pegue seu barco</h3>
-          <p>No lobby, clique no baú de gelo, escolha uma pista e mergulhe na corrida. Boa sorte, piloto! ❄️</p>
+        <p class="ip-note">Java 1.16 – 1.21+ · Bedrock porta 19132 · Sem mods obrigatórios</p>
+
+        <div class="hero-stats">
+          <div class="hstat">
+            <strong><span data-count="347" data-live="players">0</span></strong>
+            <span>jogadores online</span>
+          </div>
+          <div class="hstat">
+            <strong><span data-count="128">0</span>k</strong>
+            <span>corridas disputadas</span>
+          </div>
+          <div class="hstat">
+            <strong><span data-count="42">0</span></strong>
+            <span>pistas oficiais</span>
+          </div>
+          <div class="hstat">
+            <strong>99,9%</strong>
+            <span>uptime</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <div class="hc-head">
+          <h2>Copa Wolf #12</h2>
+          <span class="badge-open">Inscrições abertas</span>
+        </div>
+        <ul class="hc-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            Finais em <b id="hcDate">—</b>, 20h (BRT)
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Solo e duplas · 128 vagas
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            Premiação: rank Lendário + 500 mil moedas
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m2 2 20 20"/><path d="M18.9 8.9A9 9 0 0 1 21 12c-1.7 3.5-5.1 6-9 6-1.2 0-2.4-.2-3.4-.7M10.6 5.1A9 9 0 0 1 12 5c3.9 0 7.3 2.5 9 6a15.7 15.7 0 0 1-2.2 3M6.6 6.6A15.4 15.4 0 0 0 3 11c1.7 3.5 5.1 6 9 6 1 0 2-.2 2.9-.5"/></svg>
+            Transmitido ao vivo no YouTube
+          </li>
+        </ul>
+        <div class="countdown" id="countdown">
+          <div class="cd"><b id="cdDays">00</b><span>dias</span></div>
+          <div class="cd"><b id="cdHours">00</b><span>horas</span></div>
+          <div class="cd"><b id="cdMins">00</b><span>min</span></div>
+          <div class="cd"><b id="cdSecs">00</b><span>seg</span></div>
+        </div>
+        <a href="#" class="btn btn-primary btn-block">Inscrever-se pelo Discord</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== COMO JOGAR ===== -->
+  <section class="section" id="como-jogar">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Comece agora</span>
+        <h2>Três passos até a largada</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <span class="step-n">1</span>
+          <h3>Abra o Minecraft</h3>
+          <p>Java Edition da 1.16 à 1.21+, ou Bedrock. Nenhum mod é necessário.</p>
+        </div>
+        <div class="step reveal" style="--delay:.1s">
+          <span class="step-n">2</span>
+          <h3>Adicione o servidor</h3>
+          <p>Multijogador → Adicionar servidor → cole <code>wolfnetwork.com.br</code>.</p>
+        </div>
+        <div class="step reveal" style="--delay:.2s">
+          <span class="step-n">3</span>
+          <h3>Escolha uma pista</h3>
+          <p>No lobby, selecione um modo no painel central e entre na fila.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== MODOS DE JOGO ===== -->
-  <section class="section modes" id="modos">
+  <!-- ===== MODOS ===== -->
+  <section class="section section-alt" id="modos">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="section-tag">Gameplay</span>
-        <h2>Modos de <span class="ice-text">Jogo</span></h2>
-        <p>Do casual ao ultra competitivo — sempre sobre o gelo.</p>
+      <div class="section-head">
+        <span class="kicker">Modos de jogo</span>
+        <h2>Do casual ao competitivo</h2>
+        <p>Seis modos, um mesmo princípio: física original, disputa justa.</p>
       </div>
 
-      <div class="modes-grid">
-        <article class="mode-card featured tilt reveal">
-          <div class="mode-tag">Mais jogado</div>
-          <div class="mode-icon">🏁</div>
+      <div class="grid-3">
+        <article class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v12"/><circle cx="6" cy="18" r="3"/><path d="M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M12 21h6a3 3 0 0 0 3-3v-3"/></svg>
+          </div>
           <h3>Iceboat Sprint</h3>
-          <p>Corridas clássicas de 4 a 8 pilotos em pistas de blue ice. Curvas fechadas, boost pads e atalhos secretos.</p>
-          <ul class="mode-list">
-            <li>✔ Partidas de 3–5 minutos</li>
-            <li>✔ Matchmaking por elo</li>
-            <li>✔ 18 pistas oficiais</li>
-          </ul>
+          <p>Corridas de 4 a 8 pilotos em pistas de blue ice com curvas técnicas e atalhos. O modo principal, com matchmaking por elo.</p>
         </article>
 
-        <article class="mode-card tilt reveal" style="--delay:.1s">
-          <div class="mode-icon">⏱️</div>
+        <article class="card reveal" style="--delay:.08s">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg>
+          </div>
           <h3>Time Trial</h3>
-          <p>Você contra o cronômetro. Bata o recorde da pista e veja seu fantasma competindo com você a cada volta.</p>
-          <ul class="mode-list">
-            <li>✔ Ghost replay dos recordistas</li>
-            <li>✔ Leaderboard por pista</li>
-            <li>✔ Splits ao vivo</li>
-          </ul>
+          <p>Você contra o cronômetro, com ghost replay dos recordistas e splits ao vivo. Leaderboard individual por pista.</p>
         </article>
 
-        <article class="mode-card tilt reveal" style="--delay:.2s">
-          <div class="mode-icon">⚔️</div>
+        <article class="card reveal" style="--delay:.16s">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6l-8-4Z"/></svg>
+          </div>
           <h3>Iceboat Wars</h3>
-          <p>Batalhas em equipes sobre lagos congelados. Use snowballs, escudos e colisões para derrubar rivais na água.</p>
-          <ul class="mode-list">
-            <li>✔ Equipes de 4v4</li>
-            <li>✔ Power-ups na pista</li>
-            <li>✔ Temporadas ranqueadas</li>
-          </ul>
+          <p>Confrontos 4v4 sobre lagos congelados, com power-ups e colisões. Temporadas ranqueadas por equipe.</p>
         </article>
 
-        <article class="mode-card tilt reveal" style="--delay:.3s">
-          <div class="mode-icon">🐺</div>
+        <article class="card reveal" style="--delay:.24s">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg>
+          </div>
           <h3>Wolfpack Racing</h3>
-          <p>Modo exclusivo: matilhas de 3 pilotos correm juntas somando pontos. Trabalho em equipe decide o pódio.</p>
-          <ul class="mode-list">
-            <li>✔ Exclusivo da WolfNetwork</li>
-            <li>✔ Estratégia em equipe</li>
-            <li>✔ Ranking de matilhas</li>
-          </ul>
+          <p>Modo exclusivo: matilhas de 3 pilotos correm juntas e somam pontos. O ranking é coletivo — estratégia importa.</p>
         </article>
 
-        <article class="mode-card tilt reveal" style="--delay:.4s">
-          <div class="mode-icon">🏆</div>
+        <article class="card reveal" style="--delay:.32s">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M17 4H7v5a5 5 0 0 0 10 0V4Z"/><path d="M17 5h3a1 1 0 0 1 1 1c0 2.5-2 4-4 4M7 5H4a1 1 0 0 0-1 1c0 2.5 2 4 4 4"/></svg>
+          </div>
           <h3>Grand Prix</h3>
-          <p>Campeonatos semanais com calendário oficial, pontos acumulados e transmissão ao vivo no nosso canal.</p>
-          <ul class="mode-list">
-            <li>✔ Premiação em VIP ranks</li>
-            <li>✔ Casters oficiais</li>
-            <li>✔ Chave eliminatória</li>
-          </ul>
+          <p>Campeonatos semanais com calendário oficial, pontuação acumulada e transmissão com narração ao vivo.</p>
         </article>
 
-        <article class="mode-card tilt reveal" style="--delay:.5s">
-          <div class="mode-icon">🧗</div>
+        <article class="card reveal" style="--delay:.4s">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M6 20l3-12 4 5 3-7 2 14"/></svg>
+          </div>
           <h3>Frozen Parkour</h3>
-          <p>Parkour sobre gelo para treinar controle de barco. Do iniciante ao impossível, com checkpoints e recompensas.</p>
-          <ul class="mode-list">
-            <li>✔ 120+ mapas</li>
-            <li>✔ Dificuldade progressiva</li>
-            <li>✔ Conquistas exclusivas</li>
-          </ul>
+          <p>Mais de 120 mapas de parkour sobre gelo para refinar o controle do barco, com checkpoints e conquistas.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ===== PISTAS EM DESTAQUE ===== -->
-  <section class="section tracks" id="pistas">
+  <!-- ===== PISTAS ===== -->
+  <section class="section" id="pistas">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="section-tag">Mapas</span>
-        <h2>Pistas em <span class="ice-text">Destaque</span></h2>
-        <p>Criadas pela nossa equipe e pela comunidade. Cada uma com identidade própria.</p>
+      <div class="section-head">
+        <span class="kicker">Mapas</span>
+        <h2>Pistas em rotação</h2>
+        <p>Criadas pela equipe e pela comunidade, com créditos permanentes aos autores aprovados.</p>
       </div>
 
-      <div class="tracks-grid">
-        <article class="track-card reveal">
-          <div class="track-art art-glacier"><span class="track-emoji">🏔️</span></div>
-          <div class="track-info">
-            <div class="track-top">
-              <h3>Glacier Loop</h3>
-              <span class="track-record">WR 1:02.481</span>
-            </div>
-            <p>Rolante clássica com curvas em S e o temido túnel congelado.</p>
-            <div class="difficulty"><small>Dificuldade</small><div class="diff-bar"><i style="--w:65%"></i></div></div>
+      <div class="grid-2">
+        <article class="track reveal">
+          <div class="track-head">
+            <h3>Glacier Loop</h3>
+            <span class="wr">WR 1:02.481</span>
           </div>
+          <p>Curvas em S, reta final longa e o túnel congelado que decide corridas.</p>
+          <div class="diff"><span>Dificuldade</span><div class="diff-bar"><i style="--w:62%"></i></div></div>
         </article>
 
-        <article class="track-card reveal" style="--delay:.1s">
-          <div class="track-art art-aurora"><span class="track-emoji">🌌</span></div>
-          <div class="track-info">
-            <div class="track-top">
-              <h3>Aurora Speedway</h3>
-              <span class="track-record">WR 0:58.204</span>
-            </div>
-            <p>Alta velocidade sob céu nórdico. Erros custam caro aqui.</p>
-            <div class="difficulty"><small>Dificuldade</small><div class="diff-bar"><i style="--w:45%"></i></div></div>
+        <article class="track reveal" style="--delay:.08s">
+          <div class="track-head">
+            <h3>Aurora Speedway</h3>
+            <span class="wr">WR 0:58.204</span>
           </div>
+          <p>Velocidade máxima do início ao fim. Um erro de trajetória custa a corrida.</p>
+          <div class="diff"><span>Dificuldade</span><div class="diff-bar"><i style="--w:44%"></i></div></div>
         </article>
 
-        <article class="track-card reveal" style="--delay:.2s">
-          <div class="track-art art-canyon"><span class="track-emoji">🧊</span></div>
-          <div class="track-info">
-            <div class="track-top">
-              <h3>Frozen Canyon</h3>
-              <span class="track-record">WR 1:11.957</span>
-            </div>
-            <p>Desfiladeiro estreito com saltos duplos e paredes de gelo.</p>
-            <div class="difficulty"><small>Dificuldade</small><div class="diff-bar"><i style="--w:85%"></i></div></div>
+        <article class="track reveal" style="--delay:.16s">
+          <div class="track-head">
+            <h3>Frozen Canyon</h3>
+            <span class="wr">WR 1:11.957</span>
           </div>
+          <p>Desfiladeiro estreito com saltos duplos e paredes de gelo sem proteção.</p>
+          <div class="diff"><span>Dificuldade</span><div class="diff-bar"><i style="--w:84%"></i></div></div>
         </article>
 
-        <article class="track-card reveal" style="--delay:.3s">
-          <div class="track-art art-volcano"><span class="track-emoji">🌋</span></div>
-          <div class="track-info">
-            <div class="track-top">
-              <h3>Magma &amp; Ice</h3>
-              <span class="track-record">WR 1:07.332</span>
-            </div>
-            <p>Gelo sobre lava: a pista mais insana já aprovada pela staff.</p>
-            <div class="difficulty"><small>Dificuldade</small><div class="diff-bar"><i style="--w:97%"></i></div></div>
+        <article class="track reveal" style="--delay:.24s">
+          <div class="track-head">
+            <h3>Magma &amp; Ice</h3>
+            <span class="wr">WR 1:07.332</span>
           </div>
+          <p>Trajeto de blue ice sobre lava. A pista mais difícil já aprovada pela staff.</p>
+          <div class="diff"><span>Dificuldade</span><div class="diff-bar"><i style="--w:96%"></i></div></div>
         </article>
       </div>
     </div>
   </section>
 
   <!-- ===== RANKING ===== -->
-  <section class="section ranking" id="ranking">
+  <section class="section section-alt" id="ranking">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="section-tag">Competitivo</span>
-        <h2>Top Pilotos da <span class="ice-text">Temporada</span></h2>
-        <p>Atualizado em tempo real. Suba no pódio e ganhe recompensas no fim da temporada.</p>
+      <div class="section-head">
+        <span class="kicker">Temporada 4</span>
+        <h2>Top pilotos</h2>
+        <p>Ranking atualizado em tempo real. Os melhores colocados recebem recompensas no fim da temporada.</p>
       </div>
 
       <div class="table-wrap reveal">
         <table class="rank-table">
           <thead>
-            <tr>
-              <th>#</th>
-              <th>Piloto</th>
-              <th>Elo</th>
-              <th>Vitórias</th>
-              <th>Winrate</th>
-              <th>Recorde (Glacier Loop)</th>
-            </tr>
+            <tr><th>#</th><th>Piloto</th><th>Elo</th><th>Vitórias</th><th>Winrate</th><th>Recorde · Glacier Loop</th></tr>
           </thead>
           <tbody>
-            <tr class="gold">
-              <td>🥇 1</td>
-              <td><span class="avatar" style="--c:#f6c344">F</span> FrostByte_BR</td>
-              <td>2 480</td>
-              <td>312</td>
-              <td>78%</td>
-              <td>1:02.481</td>
-            </tr>
-            <tr class="silver">
-              <td>🥈 2</td>
-              <td><span class="avatar" style="--c:#7dd3fc">N</span> NevascaZ</td>
-              <td>2 315</td>
-              <td>287</td>
-              <td>74%</td>
-              <td>1:02.903</td>
-            </tr>
-            <tr class="bronze">
-              <td>🥉 3</td>
-              <td><span class="avatar" style="--c:#fb923c">K</span> KiloDrift</td>
-              <td>2 204</td>
-              <td>265</td>
-              <td>71%</td>
-              <td>1:03.117</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td><span class="avatar" style="--c:#a78bfa">S</span> SnowStormz</td>
-              <td>2 098</td>
-              <td>241</td>
-              <td>69%</td>
-              <td>1:03.552</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td><span class="avatar" style="--c:#34d399">W</span> WolfFan22</td>
-              <td>2 044</td>
-              <td>230</td>
-              <td>67%</td>
-              <td>1:03.870</td>
-            </tr>
+            <tr><td class="pos gold">1</td><td><span class="avatar" style="--c:#eab308">FB</span>FrostByte_BR</td><td>2.480</td><td>312</td><td>78%</td><td>1:02.481</td></tr>
+            <tr><td class="pos silver">2</td><td><span class="avatar" style="--c:#38bdf8">NZ</span>NevascaZ</td><td>2.315</td><td>287</td><td>74%</td><td>1:02.903</td></tr>
+            <tr><td class="pos bronze">3</td><td><span class="avatar" style="--c:#f97316">KD</span>KiloDrift</td><td>2.204</td><td>265</td><td>71%</td><td>1:03.117</td></tr>
+            <tr><td class="pos">4</td><td><span class="avatar" style="--c:#a78bfa">SS</span>SnowStormz</td><td>2.098</td><td>241</td><td>69%</td><td>1:03.552</td></tr>
+            <tr><td class="pos">5</td><td><span class="avatar" style="--c:#34d399">WF</span>WolfFan22</td><td>2.044</td><td>230</td><td>67%</td><td>1:03.870</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="rank-note reveal">✨ Recompensas de fim de temporada: molduras exclusivas, partículas áureas e título no chat.</p>
     </div>
   </section>
 
-  <!-- ===== TORNEIOS ===== -->
-  <section class="section tournaments" id="torneios">
-    <div class="container tournament-inner">
-      <div class="tournament-info">
-        <span class="section-tag reveal">Eventos</span>
-        <h2 class="reveal">Copa Wolf de <span class="ice-text">Inverno</span></h2>
-        <p class="reveal">
-          O maior torneio de Iceboat Racing do Brasil. Inscrições abertas para
-          duplas e solo, com chave eliminatória transmitida ao vivo.
-        </p>
-        <ul class="tournament-list reveal">
-          <li>🏅 Premiação total: <strong>Ranks Alfa + 500.000 moedas</strong></li>
-          <li>📅 Finais: último domingo do mês, 20h (BRT)</li>
-          <li>📺 Transmissão oficial com casters convidados</li>
-          <li>🎟️ Inscrição gratuita para todos os jogadores</li>
-        </ul>
-
-        <div class="countdown reveal" id="countdown">
-          <div class="cd-box"><span id="cdDays">00</span><small>dias</small></div>
-          <div class="cd-box"><span id="cdHours">00</span><small>horas</small></div>
-          <div class="cd-box"><span id="cdMins">00</span><small>min</small></div>
-          <div class="cd-box"><span id="cdSecs">00</span><small>seg</small></div>
-        </div>
-        <p class="countdown-label reveal">para as finais da Copa Wolf ❄️</p>
-      </div>
-
-      <div class="tournament-card tilt reveal">
-        <div class="tc-header">
-          <span class="tc-trophy">🏆</span>
-          <div>
-            <h3>Copa Wolf #12</h3>
-            <span class="tc-sub">Iceboat Sprint • 8 pistas • Solo &amp; Duplas</span>
-          </div>
-        </div>
-        <div class="tc-body">
-          <div class="tc-row"><span>Status</span><strong class="tc-open">Inscrições abertas</strong></div>
-          <div class="tc-row"><span>Vagas restantes</span><strong>37 / 128</strong></div>
-          <div class="tc-row"><span>Formato</span><strong>Grupos + Eliminatórias</strong></div>
-          <div class="tc-row"><span>Requisito</span><strong>Elo 1500+ ou convite</strong></div>
-        </div>
-        <a href="#" class="btn btn-primary btn-block">Inscrever-se pelo Discord</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== DEPOIMENTOS ===== -->
-  <section class="section testimonials">
+  <!-- ===== LOJA ===== -->
+  <section class="section" id="loja">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="section-tag">Comunidade</span>
-        <h2>O que dizem os <span class="ice-text">pilotos</span></h2>
+      <div class="section-head">
+        <span class="kicker">Apoie o servidor</span>
+        <h2>Vantagens VIP</h2>
+        <p>Todo o dinheiro arrecadado é reinvestido em hospedagem e desenvolvimento. Vantagens são cosméticas — nunca afetam a competitividade.</p>
       </div>
 
-      <div class="testi-grid">
-        <figure class="testi-card tilt reveal">
-          <div class="stars">★★★★★</div>
-          <blockquote>"Melhor servidor de iceboat que já joguei. A física é idêntica à do vanilla e o matchmaking é justo de verdade."</blockquote>
-          <figcaption>
-            <span class="avatar" style="--c:#f6c344">F</span>
-            <div><strong>FrostByte_BR</strong><small>Rank #1 • Temporada 3</small></div>
-          </figcaption>
-        </figure>
-
-        <figure class="testi-card tilt reveal" style="--delay:.12s">
-          <div class="stars">★★★★★</div>
-          <blockquote>"Entrei sem saber nem controlar o barco. Em duas semanas estava nas finais da Copa Wolf. A comunidade ensina demais!"</blockquote>
-          <figcaption>
-            <span class="avatar" style="--c:#34d399">L</span>
-            <div><strong>LuaNeve</strong><small>Pilota desde 2024</small></div>
-          </figcaption>
-        </figure>
-
-        <figure class="testi-card tilt reveal" style="--delay:.24s">
-          <div class="stars">★★★★★</div>
-          <blockquote>"Staff atenciosa, zero lag e pistas criativas. O modo Wolfpack é genial — nunca vi nada parecido em outro server."</blockquote>
-          <figcaption>
-            <span class="avatar" style="--c:#a78bfa">S</span>
-            <div><strong>SnowStormz</strong><small>Capitão da matilha Aurora</small></div>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== LOJA / RANKS ===== -->
-  <section class="section store" id="loja">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="section-tag">Apoie o servidor</span>
-        <h2>VIP <span class="ice-text">Ranks</span></h2>
-        <p>100% dos recursos mantêm a WolfNetwork no ar. Cosméticos apenas — nada de pay-to-win.</p>
-      </div>
-
-      <div class="store-grid">
-        <div class="price-card tilt reveal">
+      <div class="grid-3">
+        <div class="plan reveal">
           <h3>Lobo</h3>
-          <div class="price">R$ <span>9,90</span><small>/mês</small></div>
+          <div class="plan-price">R$ 9,90 <span>/mês</span></div>
           <ul>
-            <li>✔ Prefixo colorido no chat</li>
-            <li>✔ 2 slots de partida reservada</li>
-            <li>✔ 3 cores de partículas</li>
-            <li>✔ Acesso ao /hat</li>
+            <li>Prefixo colorido no chat</li>
+            <li>2 slots de partida reservada</li>
+            <li>3 cores de partículas</li>
+            <li>Comando /hat</li>
           </ul>
-          <a href="#" class="btn btn-outline btn-block">Escolher Lobo</a>
+          <a href="#" class="btn btn-ghost btn-block">Assinar Lobo</a>
         </div>
 
-        <div class="price-card popular tilt reveal" style="--delay:.12s">
-          <div class="popular-tag">⭐ Mais popular</div>
+        <div class="plan plan-featured reveal" style="--delay:.08s">
+          <span class="plan-tag">Mais popular</span>
           <h3>Alfa</h3>
-          <div class="price">R$ <span>19,90</span><small>/mês</small></div>
+          <div class="plan-price">R$ 19,90 <span>/mês</span></div>
           <ul>
-            <li>✔ Tudo do Lobo</li>
-            <li>✔ Skins de barco exclusivas</li>
-            <li>✔ Ghost personalizado no Time Trial</li>
-            <li>✔ Entrada prioritária em filas</li>
-            <li>✔ 10 cores de partículas</li>
+            <li>Tudo do plano Lobo</li>
+            <li>Skins de barco exclusivas</li>
+            <li>Ghost personalizado no Time Trial</li>
+            <li>Fila prioritária</li>
+            <li>10 cores de partículas</li>
           </ul>
-          <a href="#" class="btn btn-primary btn-block">Escolher Alfa</a>
+          <a href="#" class="btn btn-primary btn-block">Assinar Alfa</a>
         </div>
 
-        <div class="price-card tilt reveal" style="--delay:.24s">
+        <div class="plan reveal" style="--delay:.16s">
           <h3>Lendário</h3>
-          <div class="price">R$ <span>39,90</span><small>/mês</small></div>
+          <div class="plan-price">R$ 39,90 <span>/mês</span></div>
           <ul>
-            <li>✔ Tudo do Alfa</li>
-            <li>✔ Moldura áurea no nick</li>
-            <li>✔ Barco com trilha de aurora</li>
-            <li>✔ Voto em novas pistas</li>
-            <li>✔ Canal exclusivo no Discord</li>
+            <li>Tudo do plano Alfa</li>
+            <li>Moldura dourada no nick</li>
+            <li>Trilha de aurora no barco</li>
+            <li>Voto em novas pistas</li>
+            <li>Canal exclusivo no Discord</li>
           </ul>
-          <a href="#" class="btn btn-outline btn-block">Escolher Lendário</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ROADMAP ===== -->
-  <section class="section roadmap">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="section-tag">O futuro</span>
-        <h2>Roadmap da <span class="ice-text">Temporada 4</span></h2>
-      </div>
-
-      <div class="timeline">
-        <div class="tl-item done reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-date">Julho</div>
-          <h3>Lançamento da S4</h3>
-          <p>6 novas pistas, sistema de matilhas e revisão do elo.</p>
-        </div>
-        <div class="tl-item done reveal" style="--delay:.1s">
-          <div class="tl-dot"></div>
-          <div class="tl-date">Agosto</div>
-          <h3>Copa Wolf #12</h3>
-          <p>Maior torneio da história, com transmissão ao vivo.</p>
-        </div>
-        <div class="tl-item active reveal" style="--delay:.2s">
-          <div class="tl-dot"></div>
-          <div class="tl-date">Setembro</div>
-          <h3>Editor de Pistas</h3>
-          <p>Crie e teste suas próprias pistas diretamente no servidor.</p>
-        </div>
-        <div class="tl-item reveal" style="--delay:.3s">
-          <div class="tl-dot"></div>
-          <div class="tl-date">Outubro</div>
-          <h3>Halloween no Gelo</h3>
-          <p>Evento sazonal, pista temática e cosméticos assombrados.</p>
+          <a href="#" class="btn btn-ghost btn-block">Assinar Lendário</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===== FAQ ===== -->
-  <section class="section faq" id="faq">
-    <div class="container faq-inner">
+  <section class="section section-alt" id="faq">
+    <div class="container faq-grid">
       <div class="faq-intro">
-        <span class="section-tag reveal">Dúvidas</span>
-        <h2 class="reveal">Perguntas <span class="ice-text">Frequentes</span></h2>
-        <p class="reveal">Não achou sua resposta? Chame a gente no Discord — a staff responde em minutos.</p>
-        <a href="#" class="btn btn-primary reveal">💬 Entrar no Discord</a>
+        <span class="kicker">Dúvidas</span>
+        <h2>Perguntas frequentes</h2>
+        <p>Não encontrou sua resposta? Nossa staff responde em minutos no Discord.</p>
+        <a href="#" class="btn btn-primary">Falar no Discord</a>
       </div>
 
       <div class="faq-list">
-        <details class="faq-item reveal" open>
+        <details class="reveal" open>
           <summary>Quais versões o servidor suporta?</summary>
-          <p>Suportamos Java Edition da <strong>1.16 até a 1.21+</strong>, além de Bedrock via porta <code>19132</code>. A física do iceboat é normalizada entre versões para corridas justas.</p>
+          <p>Java Edition da 1.16 à 1.21+ e Bedrock pela porta 19132. A física do iceboat é normalizada entre versões para garantir corridas justas.</p>
         </details>
-        <details class="faq-item reveal">
-          <summary>O Iceboat Racing é igual ao do vanilla?</summary>
-          <p>Sim! Usamos a física original de barcos sobre blue ice, sem plugins que alterem velocidade. Adicionamos apenas boost pads, checkpoints e sistemas anti-lag.</p>
+        <details class="reveal" style="--delay:.06s">
+          <summary>A física é igual à do vanilla?</summary>
+          <p>Sim. Usamos a física original de barcos sobre blue ice. Adicionamos apenas boost pads, checkpoints e sistemas anti-lag — nada altera velocidade.</p>
         </details>
-        <details class="faq-item reveal">
-          <summary>Preciso instalar mods ou texturas?</summary>
-          <p>Não. O servidor funciona 100% vanilla. Opcionalmente oferecemos um resource pack leve (apenas sons e HUD) ativado automaticamente na entrada.</p>
+        <details class="reveal" style="--delay:.12s">
+          <summary>Preciso de mods ou resource pack?</summary>
+          <p>Não. O servidor funciona 100% vanilla. Existe um resource pack opcional e leve, ativado automaticamente, apenas com sons e HUD.</p>
         </details>
-        <details class="faq-item reveal">
-          <summary>Como funciona o sistema de elo?</summary>
-          <p>Cada partida ranqueada ajusta seu elo com base no desempenho e na força dos adversários. Novatos começam em 1000 e as divisões vão de Filhote até Lobo Lendário.</p>
+        <details class="reveal" style="--delay:.18s">
+          <summary>Como funciona o elo?</summary>
+          <p>Cada partida ranqueada ajusta seu elo conforme desempenho e força dos adversários. As divisões vão de Filhote a Lobo Lendário.</p>
         </details>
-        <details class="faq-item reveal">
-          <summary>Posso criar minha própria pista?</summary>
-          <p>Sim! Envie sua pista pelo canal <code>#envio-de-pistas</code> no Discord. Se aprovada pela equipe de mapas, ela entra na rotação oficial com créditos permanentes para você.</p>
+        <details class="reveal" style="--delay:.24s">
+          <summary>Posso enviar minha própria pista?</summary>
+          <p>Sim, pelo canal #envio-de-pistas no Discord. Pistas aprovadas entram na rotação oficial com créditos permanentes ao autor.</p>
         </details>
-        <details class="faq-item reveal">
+        <details class="reveal" style="--delay:.3s">
           <summary>O servidor é pay-to-win?</summary>
-          <p>Nunca. VIPs recebem apenas cosméticos e conveniências. Velocidade, barcos e power-ups são idênticos para todos os jogadores.</p>
+          <p>Não. Planos VIP concedem apenas vantagens cosméticas e de conveniência. Barcos, velocidade e power-ups são idênticos para todos.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- ===== CTA FINAL ===== -->
-  <section class="cta-final">
-    <canvas class="snow-canvas" id="snowCanvas2"></canvas>
+  <!-- ===== CTA ===== -->
+  <section class="cta">
     <div class="container cta-inner">
-      <h2 class="reveal">Pronto para deslizar rumo à <span class="ice-text">vitória</span>?</h2>
-      <p class="reveal">A linha de largada está esperando. Junte-se a milhares de pilotos agora mesmo.</p>
-      <button class="btn btn-primary btn-lg copy-ip reveal" data-ip="wolfnetwork.com.br">
-        📋 Copiar IP: wolfnetwork.com.br
-        <span class="copy-feedback">Copiado!</span>
-      </button>
+      <h2>A linha de largada é agora.</h2>
+      <p>Copie o IP, entre no servidor e dispute sua primeira corrida em menos de um minuto.</p>
+      <div class="hero-ip cta-ip">
+        <div class="ip-box">
+          <span class="ip-label-sm">Java &amp; Bedrock</span>
+          <code>wolfnetwork.com.br</code>
+        </div>
+        <button class="btn btn-primary copy-ip" data-ip="wolfnetwork.com.br">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+          Copiar IP
+          <span class="copy-feedback">Copiado</span>
+        </button>
+      </div>
     </div>
   </section>
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="#home" class="logo">
-          <span class="logo-icon">🐺</span>
-          <span class="logo-text">WOLF<span>NETWORK</span></span>
+          <svg class="logo-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 5l3 3h4l2-3 2 3h4l-2 4 2 4h-4l-2 3-2-3H7l-3-3 2-4z"/>
+          </svg>
+          <span class="logo-text">Wolf<b>Network</b></span>
         </a>
-        <p>O destino definitivo do Iceboat Racing brasileiro. Feito por fãs, para fãs.</p>
-        <div class="socials">
-          <a href="#" aria-label="Discord">💬</a>
-          <a href="#" aria-label="YouTube">▶️</a>
-          <a href="#" aria-label="TikTok">🎵</a>
-          <a href="#" aria-label="Instagram">📸</a>
-        </div>
+        <p>O servidor brasileiro dedicado ao Iceboat Racing. Feito por fãs, para fãs.</p>
       </div>
 
-      <div class="footer-col">
+      <nav class="footer-col" aria-label="Jogo">
         <h4>Jogo</h4>
-        <a href="#modos">Modos de Jogo</a>
+        <a href="#modos">Modos de jogo</a>
         <a href="#pistas">Pistas</a>
         <a href="#ranking">Ranking</a>
-        <a href="#torneios">Torneios</a>
         <a href="#loja">Loja VIP</a>
-      </div>
+      </nav>
 
-      <div class="footer-col">
+      <nav class="footer-col" aria-label="Comunidade">
         <h4>Comunidade</h4>
         <a href="#">Discord</a>
-        <a href="#">Fórum</a>
+        <a href="#">YouTube</a>
         <a href="#">Criadores de conteúdo</a>
         <a href="#">Enviar pista</a>
-      </div>
+      </nav>
 
-      <div class="footer-col">
+      <nav class="footer-col" aria-label="Suporte">
         <h4>Suporte</h4>
         <a href="#faq">FAQ</a>
         <a href="#">Regras do servidor</a>
         <a href="#">Reportar bug</a>
         <a href="#">Contato</a>
-      </div>
+      </nav>
     </div>
 
     <div class="footer-bottom">
       <div class="container">
         <p>© 2026 WolfNetwork. Não afiliado à Mojang Studios ou Microsoft.</p>
-        <p class="footer-ip">IP: <strong>wolfnetwork.com.br</strong> • Bedrock: porta 19132</p>
+        <p>IP: <code>wolfnetwork.com.br</code> · Bedrock: porta 19132</p>
       </div>
     </div>
   </footer>
-
-  <!-- ===== VOLTAR AO TOPO ===== -->
-  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
 
   <script src="script.js"></script>
 </body>
